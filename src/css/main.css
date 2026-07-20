@@ -317,3 +317,153 @@ width: 160px;
 text-align: center;
 }    
 }
+/* Reviews */
+.reviews-section{
+    background-image: url("/img/reviews/mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 341px;
+    height: 1004px;
+}
+.reviews-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.reviews-item{
+border: 1px solid #60838d;
+    border-radius: 12px;
+    padding: 16px;
+    width: 163px;
+    height: 126px;
+background: #fafff6;
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+.reviews-item-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.reviews-item-text{
+font-size: 12px;
+text-align: left;
+    color: #353334;
+}
+.ri3{
+width: 343px;
+    height: 90px;
+}
+@media only screen and (min-width: 1440px) {
+ .reviews-section{
+    background-image: url("/img/reviews/desk.png");
+    background-size: 100% 571px;
+height: 1000px;
+}
+.reviews-list{
+justify-content: center;
+gap: 32px;
+}
+.reviews-item{
+width: 210px;
+    height: 108px;
+} 
+}
+/* FAQ */
+ .faq-acc {
+     display: flex;
+     flex-direction: column;
+width: 343px;
+     margin: 0 auto;
+     gap: 32px;
+
+ }
+
+ .faq-acc-el {
+     position: relative;
+     transition: margin-bottom 0.3s ease;
+ }
+
+
+ .faq-acc-el-title {
+     margin-bottom: 0;
+ }
+
+ .faq-acc-el-trigger {
+     border: none;
+     background: inherit;
+     width: 100%;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #56565f;
+border-bottom: 1px solid #60838d;
+padding-bottom: 8px;
+     margin-bottom: 0;
+     cursor: pointer;
+     box-sizing: border-box;
+     text-align: left;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 20px;
+     height: auto;
+ }
+
+
+ .faq-acc-arr {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: transform 0.3s ease;
+     border: none;
+border-radius: 999px;
+background-color: #c23863;
+width: 24px;
+height: 24px;
+ }
+
+ .faq-acc-arr.is-hidden {
+     display: none;
+ }
+
+ .faq-acc-el.open .faq-acc-arr {
+     transform: rotate(180deg);
+     background-color: #2f650b;
+ }
+
+ .faq-acc-el-descr-frame {
+     background: inherit;
+     text-align: left;
+     padding-left: 12px;
+     overflow: hidden;
+     max-height: 0;
+     opacity: 0;
+     transition: max-height 0.3s ease, opacity 0.3s ease, border-bottom 0.3s ease;
+ }
+
+ .faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+     visibility: hidden;
+ }
+
+
+ .faq-acc-el.open .faq-acc-el-descr-frame {
+     visibility: visible;
+     opacity: 1;
+     border: none;
+     background: none;
+color: #353334;
+padding: 16px 12px;
+text-align: left;
+     max-height: 500px;
+ }
+
+ @media only screen and (min-width: 1440px) {
+
+     .faq-acc {
+    width: 790px;
+     }
+ }
