@@ -467,3 +467,25 @@ text-align: left;
     width: 790px;
      }
  }
+ /* Contact */
+ .contact-section{
+    background-image: url("/img/contact/mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 280px;
+    height: 642px;
+ }
+ .contact-link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 24px;
+     color: #353334;
+ }
+ @media only screen and (min-width: 1440px) {
+  .contact-section{
+    background-image: url("/img/contact/desk.png");
+    background-size: 100% 606px;
+height: 898px;
+ }  
+ }
